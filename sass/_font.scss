@@ -1,8 +1,20 @@
 
 $font-family-base: "Fira Code";
 $font-family-paragraf: "Roboto";
-$font-weight-bold: "bold";
-$font-weight-reguler: "normal";
-$font-size: 56px;
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+$font-size-main: 56px;
+$font-weight-base:            $font-weight-normal;
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
 
 

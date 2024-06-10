@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 8080;
-const route = require("./routes/blog");
+const route = require("./routes/main");
 const path = require("path");
 const rootPath = require("./utils/rootPath");
 const sass = require("node-sass-middleware");
@@ -20,7 +20,7 @@ app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "./public")));
 
-app.use("/blog", route);
+app.use("/", route);
 
 app.use((req, res) => {
 	res.send("Not Found");

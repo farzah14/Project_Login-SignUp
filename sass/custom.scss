@@ -3,7 +3,6 @@
 @import "font";
 @import "color";
 
-
 body {
 	background-color: $bg-color;
 }
@@ -12,14 +11,29 @@ main > h1 {
 	color: $color;
 	font-weight: $font-weight-bold;
 }
-#mainText{
-  font-size: $font-size;
-  color: $color;
+#mainText {
+	font-size: $font-size-main;
+	color: $color;
 }
-#container{
-  margin-top: 10em;
+#container {
+	margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
 }
-.bg-color{
-  background-color: $bg-color-secondary;
-  box-shadow: $box-shadow;
+.bg-color {
+	background-color: $bg-color-secondary;
+	box-shadow: $box-shadow;
+}
+.text-color {
+	color: white;
+	font-weight: $font-weight-medium;
+}
+main a {
+	transition: all .6s ease-in-out;
+  font-size: $h3-font-size;
+}
+main a:hover {
+  color: $color-secondary;
 }
