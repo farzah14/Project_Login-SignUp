@@ -1,0 +1,25 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "font";
+@import "color";
+
+
+body {
+	background-color: $bg-color;
+}
+main > h1 {
+	font-family: $font-family-base;
+	color: $color;
+	font-weight: $font-weight-bold;
+}
+#mainText{
+  font-size: $font-size;
+  color: $color;
+}
+#container{
+  margin-top: 10em;
+}
+.bg-color{
+  background-color: $bg-color-secondary;
+  box-shadow: $box-shadow;
+}
