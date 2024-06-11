@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 const port = 8080;
-const route = require("./routes/main");
+const routeMain = require("./routes/main");
 const path = require("path");
 const rootPath = require("./utils/rootPath");
 const sass = require("node-sass-middleware");
+const routeLogin = require("./routes/login");
 
 app.use(
 	sass({
@@ -20,7 +21,8 @@ app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "./public")));
 
-app.use("/", route);
+app.use("/", routeMain);
+app.use("/login", routeLogin);
 
 app.use((req, res) => {
 	res.send("Not Found");
