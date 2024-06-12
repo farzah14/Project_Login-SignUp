@@ -37,3 +37,33 @@ main a {
 main a:hover {
   color: $color-secondary;
 }
+form {
+  margin: auto;
+  max-width: 500px;
+}
+form>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.btn-color{
+  background-color: #A3C7D6;
+}
+.btn-color:hover{
+  background-color: #212429;
+  color: #A3C7D6;
+}
+
+.operation{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-left: 23em;
+  gap: 2em;
+}
+.font{
+  font-size: 1.1em;
+  color: $color;
+}

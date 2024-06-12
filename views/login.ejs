@@ -8,19 +8,24 @@
         <h1 class="text-center mt-4 mb-4">
           <%=message%>
         </h1>
-        <form action="/login" method="post">
+        <form action="/login" method="POST">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
-          <div>
-            <label for="inputPassword5" class="form-label">Password</label>
+          <div class="mb-3">
+            <label for="inputPassword5" class="form-label text-white">Password</label>
             <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-            <div id="passwordHelpBlock" class="form-text">
+            <div id="passwordHelpBlock" class="form-text text-white-50">
               Your password must be 8-20 characters
             </div>
           </div>
         </form>
+        <div class="operation">
+          <button type="submit" class="btn pt-2 pb-2 ps-4 pe-4 btn-color fw-semibold">Login</button>
+          <a href="/SignUp" class="font text-decoration-none">Sign Up</a>
+        </div>
       </main>
   </body>
+
   </html>

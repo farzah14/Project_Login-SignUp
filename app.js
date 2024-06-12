@@ -6,6 +6,7 @@ const path = require("path");
 const rootPath = require("./utils/rootPath");
 const sass = require("node-sass-middleware");
 const routeLogin = require("./routes/login");
+const routeSignUp = require("./routes/signUp");
 
 app.use(
 	sass({
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, "./public")));
 
 app.use("/", routeMain);
 app.use("/login", routeLogin);
+app.use("/signUp", routeSignUp);
 
 app.use((req, res) => {
 	res.send("Not Found");
