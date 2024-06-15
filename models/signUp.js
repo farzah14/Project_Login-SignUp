@@ -22,6 +22,8 @@ module.exports = class GetData {
 				let resultData = JSON.parse(value);
 				if (this.email[0] === this.email[1]) {
 					if (this.password[0] === this.password[1]) {
+						// Remove old data with the same email
+						resultData = resultData.filter(data => data.email !== this.email[1]);
 						resultData.push({
 							email: this.email[1],
 							password: this.password[1],
