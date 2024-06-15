@@ -1,4 +1,4 @@
-const signUpModels = require("../models/signUp");
+const SignUpModel = require("../models/signUp");
 
 exports.getSignUp = (req, res) => {
 	res.render("signUp", {
@@ -7,7 +7,7 @@ exports.getSignUp = (req, res) => {
 };
 
 exports.postSignUp = (req, res) => {
-  const newSignUp = new signUpModels(req.body.result);
+	const newSignUp = new SignUpModel(req.body.email, req.body.password);
 	newSignUp.saveData();
 	res.redirect("/signUp");
 };

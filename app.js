@@ -8,6 +8,8 @@ const sass = require("node-sass-middleware");
 const routeLogin = require("./routes/login");
 const routeSignUp = require("./routes/signUp");
 
+app.set("views", path.join(__dirname, "views"));
+
 app.use(
 	sass({
 		src: path.join(__dirname, "/sass"),
